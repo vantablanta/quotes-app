@@ -13,11 +13,12 @@ svg#clouds {
     width: 1920px;
 }
 
-.footer{
+.footer {
     background-color: #505050;
     color: white;
 
 }
+
 .footer .copyright {
     text-align: center;
     padding-top: 30px
@@ -28,11 +29,13 @@ svg#clouds {
     text-align: center;
     font-size: 13px;
 }
-.credits a{
+
+.credits a {
     text-decoration: none;
     color: green;
 }
-.credits a:hover{
+
+.credits a:hover {
     color: red;
     cursor: pointer;
 }
