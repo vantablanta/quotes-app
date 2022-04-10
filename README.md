@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Developed By
 Michelle Njeri 
 
-## Dependencies and Technologies & Refs
+## Dependencies, Technologies & Refs
 - Bootstrap 
 - Popper JS
 - CSS
