@@ -15,3 +15,10 @@
   .logo{
     width: 10vw;
   }
+  .logo-icon{
+    color: red;
+  }
+
+  .title{
+    text-decoration: none;
+  }

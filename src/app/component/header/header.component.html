@@ -1,13 +1,16 @@
 <section class="container-fluid bar">
     <div class="toolbar w-100 bg-dark">
-        <a href="index.html">
-            <img class="logo" src="../assets/logo.png">
-        </a>
-       
-        <button type="button" class="btn btn-primary text-dark float-end m-5" data-bs-toggle="modal"
+        <div class="fs-1">
+            <a class="title ms-3" href="index.html">Digi 
+                <fa-icon class="logo-icon" [icon]="faCircle"></fa-icon>
+                Quotes
+            </a>
+            <button type="button" class="btn btn-primary text-dark float-end mt-2 me-3" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             Add Quote
             <fa-icon class="add-img" [icon]="faPlus"></fa-icon>
         </button>
+        </div>
+        
     </div>
 </section>

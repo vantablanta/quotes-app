@@ -13,8 +13,12 @@
  color: red;
 }
 
+.card-delete{
+  color: red;
+}
 .card-delete:hover{
   cursor: pointer;
+  color: #0275d8;
 }
 
 .text {
