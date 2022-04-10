@@ -7,7 +7,7 @@
         </div>
         <div class="modal-body">
           
-          <form #quoteForm="ngForm" ngNativeValidate (ngSubmit)="submitQuote(); quoteForm.form.markAsPristine()" class="row g-3">
+          <form #quoteForm="ngForm" ngNativeValidate (ngSubmit)="submitQuote(); reset(quoteForm)" class="row g-3">
             <div class="col-md-4">
               <label for="inputAuthor" class="form-label">Quote Author</label>
               <input [(ngModel)]="newQoute.quoteAuthor" name="quoteAuthor" #quoteAuthor='ngModel' type="text"

@@ -22,7 +22,9 @@ export class FormComponent implements OnInit {
   }
   
 
- 
+  reset(quoteForm: NgForm){
+    quoteForm.form.markAsPristine()
+  }
   
 
   constructor() { }
