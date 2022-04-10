@@ -29,7 +29,6 @@ import { HighlightDirective } from './directive/highlight.directive';
   imports: [
     BrowserModule,
     FormsModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
