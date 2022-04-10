@@ -33,8 +33,8 @@ export class DetailsComponent implements OnInit {
   downVote(index: number) {
     this.details[index].quoteDownVote += 1
   }
-  text :boolean = false
-  showDesc(){
+  text: boolean = false
+  showDesc() {
     this.text = true
   }
 
