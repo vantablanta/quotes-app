@@ -97,15 +97,7 @@ export class QuotesComponent implements OnInit {
     this.quotesObject.push(quote)
   }
 
-
-
-
-
-
-  constructor() {
-
-
-  }
+  constructor() { }
 
 
   ngOnInit(): void {
