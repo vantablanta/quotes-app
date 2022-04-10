@@ -23,13 +23,16 @@
                             Days Elapsed:</span>{{detail.quoteDate |dateCount}}</li>
                 </ul>
                 <div class="voting row mt-2 ms-3">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <img (click)="upVote(i)" class="card-vote-up" src="../assets/up.svg">
                         {{detail.quoteUpVote}}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <img (click)="downVote(i)" class="card-vote-down " src="../assets/down.svg">
                         {{detail.quoteDownVote}}
+                    </div>
+                    <div class="col-md-4">
+                        <img (click)="delete(i)" class="card-delete ms-5" src="../assets/del.svg">
                     </div>
                 </div>
             </div>
@@ -58,7 +61,7 @@
                         {{detail.quoteDownVote}}
                     </div>
                     <div class="col-md-4">
-                        <img (click)="delete(i)" class="card-delete ms-3" src="../assets/del.svg">
+                        <img (click)="delete(i)" class="card-delete ms-5" src="../assets/del.svg">
                     </div>
 
                 </div>
