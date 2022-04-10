@@ -10,8 +10,6 @@ import { QuotesClass } from 'src/app/quotes-class'
 })
 export class DetailsComponent implements OnInit {
 
-
-
   @Input() details!: QuotesClass[]
   @Output() upVoteEvent = new EventEmitter
   @Output() downVoteEvent = new EventEmitter
