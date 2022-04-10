@@ -10,6 +10,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { FormComponent } from './component/form/form.component';
 import { DateCountPipe } from './pipe/date-count';
 import { HighlightDirective } from './directive/highlight.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -29,6 +30,7 @@ import { HighlightDirective } from './directive/highlight.directive';
   imports: [
     BrowserModule,
     FormsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

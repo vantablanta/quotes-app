@@ -1,11 +1,13 @@
 <section class="container-fluid bar">
     <div class="toolbar w-100 bg-dark">
-        <img class="logo" src="../assets/logo.png">
+        <a href="index.html">
+            <img class="logo" src="../assets/logo.png">
+        </a>
+       
         <button type="button" class="btn btn-primary text-dark float-end m-5" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             Add Quote
-            <img class="add-img" src="../assets/add.svg">
+            <fa-icon class="add-img" [icon]="faPlus"></fa-icon>
         </button>
     </div>
-
 </section>

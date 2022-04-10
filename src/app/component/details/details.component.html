@@ -7,7 +7,7 @@
                 <h5 appHighlight class="card-title mt-3">
                     {{detail.quoteCategory}}
                     <div class="float-end">
-                        <img class="most" src="../assets/most.svg" (click)="showDesc()">
+                        <fa-icon class="most" [icon]="faStar" (click)="showDesc()"></fa-icon>
                         <p class="text" *ngIf="text">Most Likes</p>
                     </div>
                 </h5>
@@ -24,15 +24,15 @@
                 </ul>
                 <div class="voting row mt-2 ms-3">
                     <div class="col-md-4">
-                        <img (click)="upVote(i)" class="card-vote-up" src="../assets/up.svg">
+                        <fa-icon (click)="upVote(i)" class="card-vote-up" [icon]="faThumbsUp"></fa-icon>
                         {{detail.quoteUpVote}}
                     </div>
                     <div class="col-md-4">
-                        <img (click)="downVote(i)" class="card-vote-down " src="../assets/down.svg">
+                        <fa-icon class="card-vote-down" (click)="downVote(i)" [icon]="faThumbsDown"></fa-icon>
                         {{detail.quoteDownVote}}
                     </div>
                     <div class="col-md-4">
-                        <img (click)="delete(i)" class="card-delete ms-5" src="../assets/del.svg">
+                        <fa-icon class="card-delete ms-5" (click)="delete(i)" [icon]="faTrash"></fa-icon>
                     </div>
                 </div>
             </div>
@@ -53,11 +53,11 @@
                 </ul>
                 <div class="voting mt-2 row ms-3">
                     <div class="col-md-4">
-                        <img (click)="upVote(i)" class="card-vote-up" src="../assets/up.svg">
+                        <fa-icon (click)="upVote(i)" class="card-vote-up" [icon]="faThumbsUp"></fa-icon>
                         {{detail.quoteUpVote}}
                     </div>
                     <div class="col-md-4">
-                        <img (click)="downVote(i)" class="card-vote-down " src="../assets/down.svg">
+                        <fa-icon class="card-vote-down" (click)="downVote(i)" [icon]="faThumbsDown"></fa-icon>
                         {{detail.quoteDownVote}}
                     </div>
                     <div class="col-md-4">

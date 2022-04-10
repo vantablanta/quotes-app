@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { QuotesClass } from 'src/app/quotes-class'
+import { faStar, faThumbsDown, faThumbsUp, faTrash} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -9,6 +10,11 @@ import { QuotesClass } from 'src/app/quotes-class'
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
+
+  faStar = faStar;
+  faThumbsDown =faThumbsDown
+  faThumbsUp = faThumbsUp
+  faTrash = faTrash
 
   @Input() details!: QuotesClass[]
   @Output() upVoteEvent = new EventEmitter

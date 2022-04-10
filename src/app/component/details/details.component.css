@@ -3,16 +3,17 @@
   justify-content: space-between;
 }
 
-.card-vote-up {
+.card-vote-up , .card-vote-down {
   cursor: pointer;
+  color: #0275d8;
 }
 
 .card-vote-up:hover,
 .card-vote-down:hover {
-  filter: invert(60%) sepia(80%) saturate(7466%) hue-rotate(20deg);
+ color: red;
 }
 
-.card-vote-down {
+.card-delete:hover{
   cursor: pointer;
 }
 
