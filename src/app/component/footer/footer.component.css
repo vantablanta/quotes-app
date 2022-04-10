@@ -31,10 +31,13 @@ svg#clouds {
 
 .credits a {
     text-decoration: none;
-    color: green;
+    color: #0275d8;
 }
 
 .credits a:hover {
     color: red;
     cursor: pointer;
+}
+.love:hover{
+    filter: invert(60%) sepia(80%) saturate(7466%) hue-rotate(20deg);
 }

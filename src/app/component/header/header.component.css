@@ -6,9 +6,12 @@
   .toolbar {
     background-color: #505050;
     color: white;
-    margin-bottom: 1vw;
   }
   
   .btn-success {
     float: right;
+  }
+
+  .logo{
+    width: 10vw;
   }
