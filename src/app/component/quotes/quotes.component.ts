@@ -54,7 +54,7 @@ export class QuotesComponent implements OnInit {
       "https://cdn.pixabay.com/photo/2018/03/23/11/57/girl-3253532_960_720.jpg",
       "If you want something said, ask a man; if you want something done, ask a woman.",
       "Girl Power",
-      "Margaret Thatcher",
+      "Margaret T",
       "Fatuma Mchafu",
       new Date("2021-05-22"),
       0,
@@ -65,7 +65,7 @@ export class QuotesComponent implements OnInit {
       "What's money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.",
       "Money",
       "Bob Dylan",
-      "Kasuku Mlimbwende",
+      "Kasuku Mfupi",
       new Date("2012-01-17"),
       0,
       0
@@ -75,7 +75,7 @@ export class QuotesComponent implements OnInit {
       "Whatever our souls are made of, his and mine are the same.",
       "Love",
       "Emily Brontë",
-      "Morris Muthumbi",
+      "Morris Mugi",
       new Date("2022-01-27"),
       0,
       0
@@ -85,7 +85,7 @@ export class QuotesComponent implements OnInit {
       "People often say that motivation doesn't last. Well, neither does bathing - that's why we recommend it daily.",
       "Comedy",
       "Zig Zigler",
-      "Michelle Njeri",
+      "Milka Bob",
       new Date("2019-06-22"),
       0,
       0
