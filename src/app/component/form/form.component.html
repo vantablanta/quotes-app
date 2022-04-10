@@ -1,5 +1,5 @@
 <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div #content class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -7,7 +7,7 @@
         </div>
         <div class="modal-body">
           
-          <form #quoteForm="ngForm" ngNativeValidate (ngSubmit)="submitQuote()" class="row g-3">
+          <form #quoteForm="ngForm" ngNativeValidate (ngSubmit)="submitQuote(); quoteForm.form.markAsPristine()" class="row g-3">
             <div class="col-md-4">
               <label for="inputAuthor" class="form-label">Quote Author</label>
               <input [(ngModel)]="newQoute.quoteAuthor" name="quoteAuthor" #quoteAuthor='ngModel' type="text"
@@ -55,7 +55,7 @@
             </div>
             <div class="modal-footer">
               <button type="submit" class="btn btn-success" data-bs-target="modal">Submit</button>
-              <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </form>
          
