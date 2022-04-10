@@ -1,17 +1,17 @@
 <section class="container-fluid row">
-    <div class="card m-3 col-md-12" style="width: 18rem;" *ngFor="let detail of details index as i">
+    <div  class="card m-3 col-md-12" style="width: 18rem;" *ngFor="let detail of details index as i">
         <div *ngIf="detail.quoteUpVote == highest && detail.quoteUpVote > 0; then highlight else noHighlight"></div>
-        <ng-template #highlight>
-            <div class="card-body">
+        <ng-template  #highlight>
+            <div  class="card-body">
                 <img [src]="detail.quoteImage" class="card-img-top">
-                <h5 class="card-title mt-3">
+                <h5 appHighlight class="card-title mt-3">
                     {{detail.quoteCategory}}
-                    <div appHighlight class="float-end">
-                        <img class="most"src="../assets/most.svg" (click)="showDesc()">
-                        <p class="text" *ngIf="text">Most Likes</p>
+                    <div class="float-end">
+                        <img  class="most"src="../assets/most.svg" (click)="showDesc()">
+                        <p  class="text" *ngIf="text">Most Likes</p>
                     </div>
                 </h5>
-                <div class="card-text">{{detail.quoteBody}}</div>
+                <div appHighlight  class="card-text">{{detail.quoteBody}}</div>
                 <ul class="list-group list-group-flush mt-5">
                     <li class="list-group-item"><span class="me-2 text-info"> 
                         Author:</span> {{detail.quoteAuthor}}
