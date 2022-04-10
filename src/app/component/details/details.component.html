@@ -1,8 +1,8 @@
-<section class="container-fluid row">
-    <div class="card m-3 col-md-12" style="width: 18rem;" *ngFor="let detail of details index as i">
+<section class="container-fluid row mb-5">
+    <div class="card m-3 col-md-12 bg-dark text-light" style="width: 18rem;" *ngFor="let detail of details index as i">
         <div *ngIf="detail.quoteUpVote == highest && detail.quoteUpVote > 0; then highlight else noHighlight"></div>
         <ng-template #highlight>
-            <div class="card-body">
+            <div class="card-body bg-dark">
                 <img [src]="detail.quoteImage" class="card-img-top">
                 <h5 appHighlight class="card-title mt-3">
                     {{detail.quoteCategory}}
@@ -12,17 +12,17 @@
                     </div>
                 </h5>
                 <div appHighlight class="card-text">{{detail.quoteBody}}</div>
-                <ul class="list-group list-group-flush mt-5">
-                    <li class="list-group-item"><span class="me-2 text-info">
+                <ul class="list-group list-group-flush bg-dark mt-4">
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-primary">
                             Author:</span> {{detail.quoteAuthor}}
                     </li>
-                    <li class="list-group-item"><span class="me-2 text-success">
+                    <li class="list-group-item bg-dark text-light "><span class="me-2 text-primary">
                             Posted By:</span>{{detail.quotePoster}}
                     </li>
-                    <li class="list-group-item"><span class="me-2 text-success">
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-primary">
                             Days Elapsed:</span>{{detail.quoteDate |dateCount}}</li>
                 </ul>
-                <div class="voting  row mt-5 ms-3">
+                <div class="voting row mt-2 ms-3">
                     <div class="col-md-6">
                         <img (click)="upVote(i)" class="card-vote-up" src="../assets/up.svg">
                         {{detail.quoteUpVote}}
@@ -36,19 +36,19 @@
         </ng-template>
 
         <ng-template #noHighlight>
-            <div class="card-body">
+            <div class="card-body bg-dark">
                 <img [src]="detail.quoteImage" class="card-img-top">
                 <h5 class="card-title mt-3">{{detail.quoteCategory}}</h5>
                 <div class="card-text">{{detail.quoteBody}}</div>
-                <ul class="list-group list-group-flush mt-5">
-                    <li class="list-group-item "><span class="me-2 text-info"> Author:</span> {{detail.quoteAuthor}}
+                <ul class="list-group list-group-flush mt-2 bg-dark mt-4">
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-primary"> Author:</span> {{detail.quoteAuthor}}
                     </li>
-                    <li class="list-group-item"><span class="me-2 text-success">Posted By:</span>{{detail.quotePoster}}
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-primary">Posted By:</span>{{detail.quotePoster}}
                     </li>
-                    <li class="list-group-item"><span class="me-2 text-success">Days Elapsed:</span>{{detail.quoteDate |
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-primary">Days Elapsed:</span>{{detail.quoteDate |
                         dateCount}}</li>
                 </ul>
-                <div class="voting  row mt-5 ms-3">
+                <div class="voting mt-2 row ms-3">
                     <div class="col-md-6">
                         <img (click)="upVote(i)" class="card-vote-up" src="../assets/up.svg">
                         {{detail.quoteUpVote}}
