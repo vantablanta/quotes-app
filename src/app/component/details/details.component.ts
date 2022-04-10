@@ -30,7 +30,6 @@ export class DetailsComponent implements OnInit {
       return upVote.quoteUpVote
     })
     this.highest = Math.max(...this.arr)
-    console.log(this.highest)
   }
 
   downVote(index: number) {
