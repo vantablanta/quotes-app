@@ -15,7 +15,7 @@ Michelle Njeri
 - Angular Docs  & MDN 
 
 ## Live Site
-[View Site]()
+[View Site](https://vantablanta.github.io/quotes-app/)
 
 ## Local Site
 Run `ng serve -o` for a dev server. The app will automatically reload if you change any of the source files. Incase you fail to see the node modules, run `npm i`
