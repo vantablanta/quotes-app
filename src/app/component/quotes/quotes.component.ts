@@ -9,7 +9,6 @@ import { QuotesClass } from 'src/app/quotes-class';
 })
 export class QuotesComponent implements OnInit {
 
-
   quotesObject: QuotesClass[] = [
     new QuotesClass(
       "https://cdn.pixabay.com/photo/2016/11/19/11/11/hands-1838658_960_720.jpg",
@@ -94,9 +93,8 @@ export class QuotesComponent implements OnInit {
 
   ]
 
-  updateQuotes(quote:QuotesClass){
+  updateQuotes(quote: QuotesClass) {
     this.quotesObject.push(quote)
-    console.log(this.quotesObject)
   }
 
 
@@ -120,4 +118,3 @@ export class QuotesComponent implements OnInit {
 
 
 
-   
