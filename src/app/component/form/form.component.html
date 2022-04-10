@@ -1,0 +1,67 @@
+<!-- Modal -->
+  <div #content class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Publish Quote</h5>
+        </div>
+        <div class="modal-body">
+          
+          <form #quoteForm="ngForm" ngNativeValidate (ngSubmit)="submitQuote()" class="row g-3">
+            <div class="col-md-4">
+              <label for="inputAuthor" class="form-label">Quote Author</label>
+              <input [(ngModel)]="newQoute.quoteAuthor" name="quoteAuthor" #quoteAuthor='ngModel' type="text"
+                class="form-control" id="inputAuthor" required>
+              <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
+                <p>Author Name is required</p>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <label for="inputPoster" class="form-label">Your Name</label>
+              <input [(ngModel)]="newQoute.quotePoster" name="quotePoster" #quotePoster='ngModel' type="text"
+                class="form-control" id="inputPoster" required>
+              <div [hidden]="quotePoster.valid || quotePoster.pristine" class="alert alert-danger">
+                <p>Your name is required</p>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <label for="inputCategory" class="form-label">Quote Category</label>
+              <input [(ngModel)]="newQoute.quoteCategory" name="quoteCategory" #quoteCategory='ngModel' type="text"
+                class="form-control" id="inputCategory" required>
+              <div [hidden]="quoteCategory.valid || quoteCategory.pristine" class="alert alert-danger">
+                <p>Category is required</p>
+              </div>
+            </div>
+  
+            <div class="col-md-12">
+              <label for="inputQuote">Quote</label>
+              <textarea [(ngModel)]="newQoute.quoteBody" name="quoteBody" #quoteBody='ngModel' class="form-control"
+                id="inputQuote" value = ""style="height: 100px" required>
+              </textarea>
+              <div [hidden]="quoteBody.valid || quoteBody.pristine" class="alert alert-danger">
+                <p>Quote is required</p>
+              </div>
+            </div>
+  
+            <div class="col-md-12">
+              <label for="inputImage" class="form-label">Image URL</label>
+              <input [(ngModel)]="newQoute.quoteImage" name="quoteImage" #quoteImage='ngModel' type="text"
+                placeholder="https://photo.jpg" class="form-control" id="inputImage" required>
+              <div [hidden]="quoteImage.valid || quoteImage.pristine" class="alert alert-danger">
+                <p>Image Url is required</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success" data-bs-target="modal">Submit</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </form>
+         
+        </div>
+  
+      </div>
+    </div>
+  </div>
+

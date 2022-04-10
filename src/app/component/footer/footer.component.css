@@ -1,0 +1,38 @@
+footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+svg#clouds {
+    position: fixed;
+    bottom: -200px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+}
+
+.footer{
+    background-color: #505050;
+    color: white;
+
+}
+.footer .copyright {
+    text-align: center;
+    padding-top: 30px
+}
+
+.footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+.credits a{
+    text-decoration: none;
+    color: green;
+}
+.credits a:hover{
+    color: red;
+    cursor: pointer;
+}

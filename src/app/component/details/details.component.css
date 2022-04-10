@@ -1,0 +1,25 @@
+
+.voting {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-vote-up {
+    cursor: pointer;
+    filter: invert(13%) sepia(80%) saturate(7466%) hue-rotate(100deg) brightness(100%) contrast(115%);
+  }
+  
+  .card-vote-up:hover,
+  .card-vote-down:hover {
+    filter: invert(0.1)
+  }
+  
+  .card-vote-down {
+    cursor: pointer;
+    filter: invert(13%) sepia(94%) saturate(7466%) hue-rotate(0deg) brightness(94%) contrast(115%);
+  }
+
+ .text{
+   font-size: 8px;
+   font-weight: 400;
+ }
