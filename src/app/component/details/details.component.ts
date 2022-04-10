@@ -13,6 +13,7 @@ export class DetailsComponent implements OnInit {
   @Input() details!: QuotesClass[]
   @Output() upVoteEvent = new EventEmitter
   @Output() downVoteEvent = new EventEmitter
+  @Output() deleteEvent = new EventEmitter
 
   constructor() {
 
@@ -33,6 +34,11 @@ export class DetailsComponent implements OnInit {
   downVote(index: number) {
     this.details[index].quoteDownVote += 1
   }
+
+  delete(index:number){
+    this.deleteEvent.emit(index)
+  }
+
   text: boolean = false
   showDesc() {
     this.text = true

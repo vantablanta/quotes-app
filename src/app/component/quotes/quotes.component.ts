@@ -99,7 +99,9 @@ export class QuotesComponent implements OnInit {
 
   constructor() { }
 
-
+  deleteQuote = (id:number) => {
+    this.quotesObject.splice(id, 1);
+  }
   ngOnInit(): void {
   }
 

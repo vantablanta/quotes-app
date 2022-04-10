@@ -11,15 +11,15 @@
                         <p class="text" *ngIf="text">Most Likes</p>
                     </div>
                 </h5>
-                <div appHighlight class="card-text">{{detail.quoteBody}}</div>
+                <div appHighlight class="card-text mt-3">{{detail.quoteBody}}</div>
                 <ul class="list-group list-group-flush bg-dark mt-4">
-                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-primary">
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-secondary">
                             Author:</span> {{detail.quoteAuthor}}
                     </li>
-                    <li class="list-group-item bg-dark text-light "><span class="me-2 text-primary">
+                    <li class="list-group-item bg-dark text-light "><span class="me-2 text-secondary">
                             Posted By:</span>{{detail.quotePoster}}
                     </li>
-                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-primary">
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-secondary">
                             Days Elapsed:</span>{{detail.quoteDate |dateCount}}</li>
                 </ul>
                 <div class="voting row mt-2 ms-3">
@@ -39,24 +39,28 @@
             <div class="card-body bg-dark">
                 <img [src]="detail.quoteImage" class="card-img-top">
                 <h5 class="card-title mt-3">{{detail.quoteCategory}}</h5>
-                <div class="card-text">{{detail.quoteBody}}</div>
+                <div class="card-text mt-3">{{detail.quoteBody}}</div>
                 <ul class="list-group list-group-flush mt-2 bg-dark mt-4">
-                    <li class="list-group-item bg-dark text-light"><span class="me-2 "> Author:</span> {{detail.quoteAuthor}}
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-secondary"> Author:</span> {{detail.quoteAuthor}}
                     </li>
-                    <li class="list-group-item bg-dark text-light"><span class="me-2">Posted By:</span>{{detail.quotePoster}}
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-secondary">Posted By:</span>{{detail.quotePoster}}
                     </li>
-                    <li class="list-group-item bg-dark text-light"><span class="me-2">Days Elapsed:</span>{{detail.quoteDate |
+                    <li class="list-group-item bg-dark text-light"><span class="me-2 text-secondary">Days Elapsed:</span>{{detail.quoteDate |
                         dateCount}}</li>
                 </ul>
                 <div class="voting mt-2 row ms-3">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <img (click)="upVote(i)" class="card-vote-up" src="../assets/up.svg">
                         {{detail.quoteUpVote}}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <img (click)="downVote(i)" class="card-vote-down " src="../assets/down.svg">
                         {{detail.quoteDownVote}}
                     </div>
+                    <div class="col-md-4">
+                        <img (click)="delete(i)" class="card-delete ms-3" src="../assets/del.svg">
+                    </div>
+
                 </div>
             </div>
         </ng-template>
