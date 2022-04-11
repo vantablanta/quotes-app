@@ -45,11 +45,6 @@ export class DetailsComponent implements OnInit {
     this.deleteEvent.emit(index)
   }
 
-  text: boolean = false
-  showDesc() {
-    this.text = true
-  }
-
   ngOnInit(): void {
 
   }
